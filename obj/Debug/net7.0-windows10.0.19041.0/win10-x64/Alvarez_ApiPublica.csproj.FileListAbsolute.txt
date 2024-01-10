@@ -323,3 +323,4 @@ C:\Users\guill\Desktop\ProgramacionIV\Alvarez_ApiPublica\obj\Debug\net7.0-window
 C:\Users\guill\Desktop\ProgramacionIV\Alvarez_ApiPublica\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\guill\Desktop\ProgramacionIV\Alvarez_ApiPublica\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\guill\Desktop\ProgramacionIV\Alvarez_ApiPublica\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\guill\Desktop\ProgramacionIV\Alvarez_ApiPublica\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Alvarez_ApiPublica.sourcelink.json
