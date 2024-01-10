@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Alvarez_ApiPublica.AlvarezViews.AlvarezClimaActual"
+             Title="Hola Guillermo, Consulta aquí tu clima">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TitleLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#007BFF" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <!-- Puedes agregar más estilos aquí -->
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid BackgroundColor="#F2F2F2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Latitud" Grid.Row="0" Grid.Column="0" Style="{StaticResource TitleLabelStyle}"/>
+        <Label Text="Longitud" Grid.Row="0" Grid.Column="1" Style="{StaticResource TitleLabelStyle}"/>
+
+        <Entry  x:Name="AlvarezLat" Grid.Row="1" Grid.Column="0"/>
+        <Entry  x:Name="AlvarezLon" Grid.Row="1" Grid.Column="1"/>
+
+        <Button Text="Consultar" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Clicked="Button_Clicked" BackgroundColor="#007BFF" TextColor="White"/>
+        <StackLayout Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Label Text="El clima actual del clima es:" Style="{StaticResource TitleLabelStyle}" />
+            <Image Source="weather_icon.png" />
+        </StackLayout>
+        <Label x:Name="AlvarezWeatherLabel" Grid.Row="4" Grid.Column="1"/>
+        <Label Text="La ciudad es:"  Grid.Row="5" Grid.Column="0" Style="{StaticResource TitleLabelStyle}"/>
+        <Label x:Name="AlvarezCityLabel" Grid.Row="5" Grid.Column="1"/>
+        <Label Text="El país es:"  Grid.Row="6" Grid.Column="0" Style="{StaticResource TitleLabelStyle}"/>
+        <Label x:Name="AlvarezPais" Grid.Row="6" Grid.Column="1"/>
+        <Label Text="La temperatura máxima es:"  Grid.Row="7" Grid.Column="0" Style="{StaticResource TitleLabelStyle}"/>
+        <Label x:Name="AlvarezTempMaxima" Grid.Row="7" Grid.Column="1"/>
+        <Label Text="La temperatura mínima es:"  Grid.Row="8" Grid.Column="0" Style="{StaticResource TitleLabelStyle}"/>
+        <Label x:Name="AlvarezTempMinima" Grid.Row="8" Grid.Column="1"/>
+    </Grid>
+</ContentPage>
